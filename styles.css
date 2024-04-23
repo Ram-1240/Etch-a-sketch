@@ -1,0 +1,29 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.cell {
+    width: calc(100% / var(--grid-size));
+    height: calc(100% / var(--grid-size));
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.cell:hover {
+    background-color: black;
+}
